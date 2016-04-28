@@ -127,3 +127,5 @@ We need to implement following endpoints:
 * Configure environment.
 * Spin up application.
 
+
+test from sk
