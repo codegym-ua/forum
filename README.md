@@ -1,4 +1,4 @@
-# forum_11
+# forum
 Simple Forum implementalion.
 
 ### 1. First Web Application with Servlets
