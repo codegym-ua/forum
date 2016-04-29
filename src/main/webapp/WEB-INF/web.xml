@@ -1,7 +1,7 @@
 <web-app>
     <servlet>
         <servlet-name>forum</servlet-name>
-        <servlet-class>forum.servlet.TopicsServlet</servlet-class>
+        <servlet-class>ua.codegym.forum.servlet.TopicsServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -11,7 +11,7 @@
 
     <servlet>
         <servlet-name>comment</servlet-name>
-        <servlet-class>forum.servlet.CommentsServlet</servlet-class>
+        <servlet-class>ua.codegym.forum.servlet.CommentsServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
