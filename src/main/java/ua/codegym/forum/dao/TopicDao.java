@@ -8,17 +8,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class TopicDao {
-  public static void main(String[] args) throws SQLException {
-    TopicDao topicDao = new TopicDao();
-    Topic myTopic = new Topic("Text5","Text6");
-
-    topicDao.insertTopic(myTopic);
-    Map<Integer, Topic> topics = topicDao.loadTopic();
-
-    for (Map.Entry<Integer, Topic> topic : topics.entrySet()) {
-      System.out.println(topic.getKey() + " " + topic.getValue().toString());
-    }
-  }
 
   public void insertTopic(Topic topic)  {
     try {
@@ -72,7 +61,7 @@ public class TopicDao {
     }
     try {
       return DriverManager
-          .getConnection("jdbc:mysql://localhost:3306/forum", "forum", "forum");
+          .getConnection("jdbc:mysql://localhost:3306/your_database_name", "your_login", "your_password");
     } catch (SQLException e) {
       System.out.println("Connection Failed! Check output console");
       e.printStackTrace();

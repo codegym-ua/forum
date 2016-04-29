@@ -7,20 +7,6 @@ import java.util.List;
 
 public class CommentsDao {
 
-  public static void main(String[] args) {
-    CommentsDao commentsDao = new CommentsDao();
-    int idTopic = 1;
-    String comment1 = "comment1";
-    String comment2 = "comment2";
-    commentsDao.insertComment(idTopic, comment1);
-    commentsDao.insertComment(idTopic, comment2);
-    List<String> comments = commentsDao.loadComment(1);
-    System.out.println(comments.size());
-    for (String out : comments) {
-      System.out.println(out);
-    }
-  }
-
   public void insertComment(int idTopic, String comment)  {
     try {
       Connection connection = getConnection();
@@ -71,7 +57,7 @@ public class CommentsDao {
     }
     try {
       return DriverManager
-          .getConnection("jdbc:mysql://localhost:3306/forum", "forum", "forum");
+          .getConnection("jdbc:mysql://localhost:3306/your_database_name", "your_login", "your_password");
     } catch (SQLException e) {
       System.out.println("Connection Failed! Check output console");
       e.printStackTrace();
