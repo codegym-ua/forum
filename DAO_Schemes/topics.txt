@@ -7,3 +7,9 @@ Table:  topics
 | HeadOfTopic | varchar(120)  | NO   |     | NULL    |                |
 | TextOfTopic | varchar(1200) | YES  |     | NULL    |                |
 +-------------+---------------+------+-----+---------+----------------+
+
+CREATE TABLE topics (
+         id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+         HeadOfTopic VARCHAR(120) not NULL,
+         TextOfTopic VARCHAR(1200)
+       );
